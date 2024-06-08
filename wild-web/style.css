@@ -1,1 +1,264 @@
 /*reset project*/
+body {
+    background-image: url('背景.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* typography */
+
+div.largetext {
+    font-size:200px;
+    line-height: 1;
+}
+
+div.mediumtext {
+    font-size: 27px;
+    line-height: 32px;
+}
+div.smalltext {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+div.title{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.italic{
+    font-style: italic;
+}
+
+/* layout */
+
+div.width60 {
+    width: 60%;
+    padding: 5px;
+}
+
+div.width50 {
+    width: 50%;
+    padding: 5px;
+}
+
+div.width100 {
+    width: 100%;
+    padding: 100px;
+}
+
+div.container1{
+    display: flex;
+    align-items: center;
+}
+
+div.textcenter{
+    text-align: center;
+    color: aqua;
+}
+
+div.title{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+div.footnote{
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+div.image2{
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.image{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    gap: 300px;
+}
+
+div.content2{
+    border-bottom: 2px solid black;
+}
+
+div.content3{
+    border-bottom: 2px solid black;
+}
+
+div.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+div.image-content{
+    width: 350px;
+    height: 350px;
+}
+
+div.image-content2{
+    width: 350px;
+    height: 250px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+div.image-content3{
+    width: 500px;
+    height: 250px;
+    margin-left: 50px;
+}
+
+
+div.container3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+div.container4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+div.text-content{
+    font-weight: bold;
+    color: aqua;
+    border-bottom: 2px solid black;
+    flex: 0 1 40%;
+    padding: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: -400px;
+    font-size: 25px;
+}
+
+div.slideshow{
+    overflow: hidden;
+    width: 65%;
+    position: relative;
+    height: 500px;
+    margin-right: 35%;
+    flex: 0 1 60%;
+    padding: 10px;
+}
+
+div.slides{
+    width: 500%;
+    animation: slide-animation 50s linear;
+    display: flex;
+}
+
+div.image{
+    width:900px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@keyframes slide-animation{
+    0%,8%,100% {transform: translateX(0);} 
+    20%,28% {transform: translateX(-100%);}
+    40%,48% {transform: translateX(-200%);}
+    60%,68% {transform: translateX(-300%);}
+    80%,88% {transform: translateX(-400%);}
+}
+
+div.hr{
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+div.intro-text{
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 40px;
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 1050px;
+    margin-top: 200px;
+}
+
+div.content{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    gap: 100px;
+}
+
+div.scrollable h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+div.scrollable p{
+    font-size:20px ;
+}
+
+div.scrollable .highlight{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.scrollable img{
+    width: 200px;
+    height: auto;
+}
+
+#box2 .scrollable img{
+    width: 500px;
+    height: auto;
+}
+
+div.box{
+    width: 30%;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div.scrollable{
+    height: 1000px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+div.scrollable::-webkit-scrollbar {
+    width: 5px;
+}
+
+div.scrollable::-webkit-scrollbar-thumb {
+    background-color: brown;
+    border-radius: 10px;
+}
+
+div.footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    color: aqua;
+}
